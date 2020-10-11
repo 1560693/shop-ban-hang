@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/slideShow.js"></script>
+    <script src="js/responsive.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="account">
+                    <a id="myModal_btn">Tài Khoản</a>
+
+                    <!-- The Modal -->
+
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal_container">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <span class="close">&times;</span>
+                                    <h2 style="text-align:center; margin-left: 40px;">ĐĂNG NHẬP</h2>
+                                </div>
+                                <div class="vl">
+                                    <span class="vl-innertext">or</span>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="fb btn">
+                                        <i class="fa fa-facebook fa-fw"></i> Đăng nhập Facebook
+                                    </a>
+                                    <a href="#" class="twitter btn">
+                                        <i class="fa fa-twitter fa-fw"></i> Đăng nhập Twitter
+                                    </a>
+                                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                        </i> Đăng nhập Google+
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name="username" placeholder="Tên Đăng nhập" required>
+                                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                                    <input type="submit" value="Đăng nhập">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- ------------------------ -->
+                        <div class="modal_bottom_container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Đăng ký</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------------ -->
+                    </div>
+                    <!-- end-modal -->
+                </div>
+                <div class="logo col-2">
+                    <a href="index.html">
+                        <img src="img/logo.png" style="width: 100px; height: 80px;" alt="">
+                    </a>
+                </div>
+                <form action="" class="search" >
+                    <input type="text" class="tbsearch" placeholder="Tìm kiếm sản phẩm...." >
+                    <input type="submit" class="btnsearch" value=" "> 
+                </form>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="navbar-bot">
+                <nav class="navbar-bot-content" id="my-navbar">
+                    <ul>
+                        <li><a href="index.html" class="nav-link-head">Trang Chủ</a></li>
+                        <li><a href="" class="nav-link">Thời Trang Nam</a></li>
+                        <li><a href="" class="nav-link">Thời Trang Nữ</a></li>
+                        <li><a href="" class="nav-link">Máy Ảnh</a></li>
+                        <li><a href="" class="nav-link">Điện Thoại</a></li>
+                        <li><a href="" class="nav-link">Đồng Hồ</a></li>
+                        <li>
+                            <a href="javascript:void(0);" id="icon" onclick="myFunction()">&#9776;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end-navbar -->
+        <div class="product_cart" style="padding-top: 140px;">
+            <div class="product_cart_container">
+                <h3 class="cart_title">
+                    GIỎ HÀNG
+                </h3>
+                <table class="table_cart">
+                    <thead>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Chi tiết sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số Lượng</th>
+                            <th>Tổng Giá</th>
+                            <th>Xóa Sản Phẩm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/thoi-trang-nam/1.jpg" id="product_main_img" alt="">
+                            </td>
+                            <td>
+                                <div class="cart_detail">
+                                    <div class="cart_product_name">
+                                        <p>Bộ Vest Nam Biluxury Màu Xanh Lam</p>
+                                    </div>
+                                    <p>
+                                        <img src="img/star.png" alt="">
+                                        <a href="#"> 02 Đánh giá(S)</a>
+                                    </p>
+                                    <div class="cart_product_color">
+                                        <span>Màu sản phẩm: </span>
+                                        <ul>
+                                            <li>Xanh</li>
+                                            <li>Đen</li>
+                                        </ul>
+                                    </div>
+                                    <p class="cart_product_code">Mã sản phẩm : <strong>3AVBB24001</strong></p>
+                                </div>
+                            </td>
+                            <td> 
+                                <h5>1.299.000đ</h5>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <h5><strong>1.299.000đ</strong></h5>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <img src="img/remove.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <!-- ============================ -->
+                        <tr>
+                            <td>
+                                <img src="img/thoi-trang-nam/1.jpg" id="product_main_img" alt="">
+                            </td>
+                            <td>
+                                <div class="cart_detail">
+                                    <div class="cart_product_name">
+                                        <p>Bộ Vest Nam Biluxury Màu Xanh Lam</p>
+                                    </div>
+                                    <p>
+                                        <img src="img/star.png" alt="">
+                                        <a href="#"> 02 Đánh giá(S)</a>
+                                    </p>
+                                    <div class="cart_product_color">
+                                        <span>Màu sản phẩm: </span>
+                                        <ul>
+                                            <li>Xanh</li>
+                                            <li>Đen</li>
+                                        </ul>
+                                    </div>
+                                    <p class="cart_product_code">Mã sản phẩm : <strong>3AVBB24001</strong></p>
+                                </div>
+                            </td>
+                            <td> 
+                                <h5>1.299.000đ</h5>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <h5><strong>1.299.000đ</strong></h5>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <img src="img/remove.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- footer-->
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="col-10">
+                        <h1>FOOTER</h1>
+                    </div>
+                    <a href="https://www.facebook.com/EdwardNewgatee/" class="col-2 fb">
+                        <img src="img/fb.png" alt=""> Mai Duy Vương
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Modal account -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myModal_btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

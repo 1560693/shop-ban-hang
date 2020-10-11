@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/slideShow.js"></script>
+	<script src="js/responsive.js"></script>
+	<!-- <script src="js/modal.js"></script> -->
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="navbar-top">
+				<div class="account">
+					<a id="myModal_btn">Tài Khoản</a>
+
+					<!-- The Modal -->
+
+					<div id="myModal" class="modal">
+						<!-- Modal content -->
+						<div class="modal_container">
+							<form action="/action_page.php">
+								<div class="row">
+									<span class="close">&times;</span>
+									<h2 style="text-align:center; margin-left: 40px;">ĐĂNG NHẬP</h2>
+								</div>
+								<div class="vl">
+									<span class="vl-innertext">or</span>
+								</div>
+								<div class="col">
+									<a href="#" class="fb btn">
+										<i class="fa fa-facebook fa-fw"></i> Đăng nhập Facebook
+									</a>
+									<a href="#" class="twitter btn">
+										<i class="fa fa-twitter fa-fw"></i> Đăng nhập Twitter
+									</a>
+									<a href="#" class="google btn"><i class="fa fa-google fa-fw">
+										</i> Đăng nhập Google+
+									</a>
+								</div>
+								<div class="col">
+									<input type="text" name="username" placeholder="Tên Đăng nhập" required>
+									<input type="password" name="password" placeholder="Mật khẩu" required>
+									<input type="submit" value="Đăng nhập">
+								</div>
+							</form>
+						</div>
+						<!-- ------------------------ -->
+						<div class="modal_bottom_container">
+							<div class="row">
+								<div class="col">
+									<a href="#" style="color:white" class="btn">Đăng ký</a>
+								</div>
+								<div class="col">
+									<a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+								</div>
+							</div>
+						</div>
+						<!-- ------------------------ -->
+					</div>
+					<!-- end-modal -->
+				</div>
+				<div class="logo col-2">
+					<a href="">
+						<img src="img/logo.png" style="width: 100px; height: 80px;" alt="">
+					</a>
+				</div>
+				<form action="" class="search" >
+					<input type="text" class="tbsearch" placeholder="Tìm kiếm sản phẩm...." >
+					<input type="submit" class="btnsearch" value=" "> 
+				</form>
+				<div class="cart">
+					<a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="navbar-bot">
+				<nav class="navbar-bot-content" id="my-navbar">
+					<ul>
+						<li><a href="index.html" class="nav-link-head">Trang Chủ</a></li>
+						<li><a href="" class="nav-link">Thời Trang Nam</a></li>
+						<li><a href="" class="nav-link">Thời Trang Nữ</a></li>
+						<li><a href="" class="nav-link">Máy Ảnh</a></li>
+						<li><a href="" class="nav-link">Điện Thoại</a></li>
+						<li><a href="" class="nav-link">Đồng Hồ</a></li>
+						<li>
+							<a href="javascript:void(0);" id="icon" onclick="myFunction()">&#9776;</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- end-navbar -->
+		<div class="banner">
+			<div class="banner-left">
+				<div class="banner-left-content">
+					<img src="img/banner/banner3.jpg" class="slide fade" alt="">
+					<img src="img/banner/banner1.jpg" class="slide fade" alt="">
+					<img src="img/banner/banner2.jpg" class="slide fade" alt="">
+				</div>
+				<div class="banner-left-dieuhuong">
+					<a class="prev" onclick="plusSlides(-1)">&#139;</a>
+					<a class="next" onclick="plusSlides(1)">&#155;</a>
+				</div>
+			</div>
+		</div>
+		<!-- end-banner -->
+		<div class="main">
+			<div class="main-type">
+				<div class="main-type-content">
+					<div class="main-type-title">
+						<div class="title">
+							<h2>THỜI TRANG NAM</h2>
+						</div>
+						<div class="sub-title">
+							<a href="">Xem tất cả <i class="fas fa-caret-right"></i></a>
+						</div>
+					</div>
+					<div class="dieu_huong">
+						<span class="dieu_huong_fs">&#139;</span>
+						<span class="dieu_huong_fs">&#155;</span>
+					</div>
+					<div class="main-type-product">
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nam/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Vest Nam Biluxury</h3>
+									</div>
+									<div class="price-product">
+										<h3>1.299.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+					</div>
+					<!-- main-type-product -->
+				</div>
+				<!-- main-type-content -->
+			</div>
+			<!-- main-type fs nam -->
+
+			<div class="main-type">
+				<div class="main-type-content">
+					<div class="main-type-title">
+						<div class="title">
+							<h2>THỜI TRANG NỮ</h2>
+						</div>
+						<div class="sub-title">
+							<a href="">Xem tất cả <i class="fas fa-caret-right"></i></a>
+						</div>
+					</div>
+					<div class="dieu_huong">
+						<span class="dieu_huong_fs2">&#139;</span>
+						<span class="dieu_huong_fs2">&#155;</span>
+					</div>
+					<div class="main-type-product">
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>200.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+						<div class="product-item fashion2">
+							<a href="product_detail.html">
+								<div class="img">
+									<img src="img/thoi-trang-nu/1.jpg" alt="">
+								</div>
+								<div class="description">
+									<div class="name-product">
+										<h3>Bộ Đi Biển Nữ</h3>
+									</div>
+									<div class="price-product">
+										<h3>600.000đ</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- product-item -->
+					
+					</div>
+					<!-- main-type-product -->
+				</div>
+				<!-- main-type-content -->
+			</div>
+			<!-- main-type fs nu -->
+		</div>
+		<!-- end-main -->
+		<footer>
+			<div class="footer">
+				<div class="footer-content">
+					<div class="col-10">
+						<h1>FOOTER</h1>
+					</div>
+					<a href="https://www.facebook.com/EdwardNewgatee/" class="col-2 fb">
+						<img src="img/fb.png" alt=""> Mai Duy Vương
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- js -->
+	<script language="javascript">
+		var myIndex = 0;
+		slideShow();
+		function slideShow() {
+			var i;
+			var x = document.getElementsByClassName("slide");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1;
+			}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(slideShow, 4000);
+		}
+	</script>
+	<!-- prev-next-product -->
+	<script language="javascript">
+		var dieuhuong_fs   = document.getElementsByClassName("dieu_huong_fs");
+		var productItem_fs = document.getElementsByClassName("fashion");
+		var l = 0;
+		dieuhuong_fs[1].onclick = ()=>{
+			l++;
+			for(var i of productItem_fs)
+			{
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = "-400px";}
+				if (l==2) {i.style.left = "-800px";}
+				if (l==3) {i.style.left = "-1200px";}
+				if (l==4) {i.style.left = "-1400px";}
+				if (l>4)  {l=4;}
+			}
+		}
+		dieuhuong_fs[0].onclick = ()=>{
+			l--;
+			for(var i of productItem_fs)
+			{
+				if (l==0) {i.style.left = "0px";}
+				if (l==1) {i.style.left = "-400px";}
+				if (l==2) {i.style.left = "-800px";}
+				if (l==3) {i.style.left = "-1200px";}
+				if (l<0)  {l=0;}
+			}
+		}
+	</script>
+	
+	<script language="javascript">
+		var dieuhuong_fs2   = document.getElementsByClassName("dieu_huong_fs2");
+		var productItem_fs2 = document.getElementsByClassName("fashion2");
+		var l1 = 0;
+		dieuhuong_fs2[1].onclick = ()=>{
+			l1++;
+			for(var i of productItem_fs2)
+			{
+				if (l1==0) {i.style.left = "0px";}
+				if (l1==1) {i.style.left = "-400px";}
+				if (l1==2) {i.style.left = "-800px";}
+				if (l1==3) {i.style.left = "-1200px";}
+				if (l1==4) {i.style.left = "-1400px";}
+				if (l1>4)  {l=4;}
+			}
+		}
+		dieuhuong_fs2[0].onclick = ()=>{
+			l1--;
+			for(var i of productItem_fs2)
+			{
+				if (l1==0) {i.style.left = "0px";}
+				if (l1==1) {i.style.left = "-400px";}
+				if (l1==2) {i.style.left = "-800px";}
+				if (l1==3) {i.style.left = "-1200px";}
+				if (l1<0)  {l1=0;}
+			}
+		}
+	</script>
+	<!-- Modal account -->
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myModal_btn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>

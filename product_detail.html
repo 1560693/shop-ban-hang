@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/slideShow.js"></script>
+    <script src="js/responsive.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="account">
+                    <a id="myModal_btn">Tài Khoản</a>
+
+                    <!-- The Modal -->
+
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal_container">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <span class="close">&times;</span>
+                                    <h2 style="text-align:center; margin-left: 40px;">ĐĂNG NHẬP</h2>
+                                </div>
+                                <div class="vl">
+                                    <span class="vl-innertext">or</span>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="fb btn">
+                                        <i class="fa fa-facebook fa-fw"></i> Đăng nhập Facebook
+                                    </a>
+                                    <a href="#" class="twitter btn">
+                                        <i class="fa fa-twitter fa-fw"></i> Đăng nhập Twitter
+                                    </a>
+                                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                        </i> Đăng nhập Google+
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name="username" placeholder="Tên Đăng nhập" required>
+                                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                                    <input type="submit" value="Đăng nhập">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- ------------------------ -->
+                        <div class="modal_bottom_container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Đăng ký</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------------ -->
+                    </div>
+                    <!-- end-modal -->
+                </div>
+                <div class="logo col-2">
+                    <a href="index.html">
+                        <img src="img/logo.png" style="width: 100px; height: 80px;" alt="">
+                    </a>
+                </div>
+                <form action="" class="search" >
+                    <input type="text" class="tbsearch" placeholder="Tìm kiếm sản phẩm...." >
+                    <input type="submit" class="btnsearch" value=" "> 
+                </form>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="navbar-bot">
+                <nav class="navbar-bot-content" id="my-navbar">
+                    <ul>
+                        <li><a href="index.html" class="nav-link-head">Trang Chủ</a></li>
+                        <li><a href="" class="nav-link">Thời Trang Nam</a></li>
+                        <li><a href="" class="nav-link">Thời Trang Nữ</a></li>
+                        <li><a href="" class="nav-link">Máy Ảnh</a></li>
+                        <li><a href="" class="nav-link">Điện Thoại</a></li>
+                        <li><a href="" class="nav-link">Đồng Hồ</a></li>
+                        <li>
+                            <a href="javascript:void(0);" id="icon" onclick="myFunction()">&#9776;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end-navbar -->
+        
+        <!-- product-detail -->
+        <div class="product_detail_container">
+            <div class="product_detail_content">
+                <div class="product_detail_content_sub col-12">
+                    <div class="img_product col-4">
+                        <div class="product_detail_img">
+                            <img src="img/thoi-trang-nam/1.jpg" id="product_main_img" alt="">
+                        </div>
+                        <div class="product_detail_list_img">
+                            <div class="product_list_img">
+                                <img src="img/thoi-trang-nam/2.jpg" width="100%" class="small_img" alt="">
+                            </div>
+                            <div class="product_list_img">
+                                <img src="img/thoi-trang-nam/3.jpg" width="100%" class="small_img" alt="">
+                            </div>
+                            <div class="product_list_img">
+                                <img src="img/thoi-trang-nam/4.jpg" width="100%" class="small_img" alt="">
+                            </div>
+                            <div class="product_list_img">
+                                <img src="img/thoi-trang-nam/5.jpg" width="100%" class="small_img" alt="">
+                            </div>
+                            <div class="product_list_img">
+                                <img src="img/thoi-trang-nam/1.jpg" width="100%" class="small_img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end-img-product -->
+                    <div class="product_detail col-8">
+                        <div class="product_detail_top">
+                            <div class="product_title">
+                                <a href="">Trang chủ</a> <span>/</span> <a href="">Thời Trang Nam</a>
+                            </div>
+                            <div class="product_name">
+                                <h3>Bộ Vest Nam Biluxury Màu Xanh Lam - 3AVBB24001</h3>
+                            </div>
+                            <div class="product_trademark">
+                                <span>Thương hiệu: </span>
+                                <a href="">BILUXURY</a>
+                            </div>
+                        </div>
+                        <!-- product_detail_top -->
+                        <div class="product_detail_middle">
+                            <div class="product_price">
+                                <span>1.299.000đ</span>
+                            </div>
+                            <div class="product_star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>  
+                        <!-- product_detail_middle -->
+                        <div class="product_detail_bot">
+                            <div class="product_color">
+                                <span>Màu: </span>
+                            </div>
+                            <div class="product_size">
+                                <span>Chọn Size: </span>
+                                <select>
+                                    <option value="">M</option>
+                                    <option value="">L</option>
+                                    <option value="">XL</option>
+                                    <option value="">2XL</option>
+                                    <option value="">3XL</option>
+                                </select>
+                            </div>
+                            <div class="product_quality">
+                                <span>Số lượng: </span>
+                                <button>-</button>
+                                <input type="text">
+                                <button>+</button>
+                            </div>
+                            <div class="product_detail_detail">
+                                <h4>Chi tiết sản phẩm:</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores quisquam debitis facere corporis voluptatibus accusamus tempora blanditiis, adipisci, eligendi doloremque inventore incidunt ullam, perspiciatis odio. Architecto facilis alias voluptas.</p>
+                            </div>
+                            <div class="product_btn">
+                                <button style="background-color: #F4A213; color: #fff; font-weight: 600;">Thêm vào giỏ hàng</button>
+                                <button style="background-color: #F03D11; color: #fff; font-weight: 600;">Mua ngay</button>
+                            </div>
+                        </div>
+                        <!-- product_detail_bot -->
+                    </div>
+                    <!-- product_detail -->
+                </div>
+
+                <div class="tab_review_cmt col-12">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event,'review')">Đánh Giá</button>
+                        <button class="tablinks" onclick="openCity(event,'comment')">Bình Luận</button>
+                    </div>
+                    <div class="tabcontent tab_active" id="review">
+                        <div class="review_title">
+                            <strong>Đánh giá nhận xét về sản phẩm</strong>
+                            <span>( 2 lượt đánh giá )</span>
+                        </div>
+                        <div class="review_star">
+                            <div class="review_star_left">
+                                <strong>5.0</strong> 
+                                <span style="font-weight: 600; font-size: 22px;"> / </span> 
+                                <span style="font-weight: 600; color: #e5101d;">2</span>
+                                <div class="star" style="display: inline-block;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p style="font-size: 15px; color: #828282;">
+                                Đây là thông tin người mua đánh giá shop bán sản phẩm này có đúng mô tả không.
+                                </p>
+                            </div>
+                            <div class="review_star_right">
+                                <div class="item_star_right">
+                                    <div class="star_right">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="star_right_container">
+                                        <div class="star_right_percent five_star"></div>
+                                    </div>
+                                    <p>2</p>
+                                </div>
+                                <!-- 5 sao -->
+                                <div class="item_star_right">
+                                    <div class="star_right">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                    </div>
+                                    <div class="star_right_container">
+                                        <div class="star_right_percent four_star"></div>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <!-- 4 sao -->
+                                <div class="item_star_right">
+                                    <div class="star_right">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                    </div>
+                                    <div class="star_right_container">
+                                        <div class="star_right_percent three_star"></div>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <!-- 3 sao -->
+                                <div class="item_star_right">
+                                    <div class="star_right">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                    </div>
+                                    <div class="star_right_container">
+                                        <div class="star_right_percent two_star"></div>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <!-- 2 sao  -->
+                                <div class="item_star_right">
+                                    <div class="star_right">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                        <i class="fas fa-star" style="color: #ddd"></i>
+                                    </div>
+                                    <div class="star_right_container">
+                                        <div class="star_right_percent ont_star"></div>
+                                    </div>
+                                    <p>0</p>
+                                </div>
+                                <!-- 1sa0 -->
+                            </div>
+                        </div>
+                        <div class="review_product">
+                            <div class="review_product_content">
+                                <div class="product_review_content" >
+                                    <div class="img">
+                                        <img src="img/nv.png" style="width: 40px;" alt="">
+                                    </div>
+                                    <div class="review_wrapper">
+                                        <div class="product_customer">
+                                            <p>Batman</p>
+                                        </div>
+                                        <div class="product_time">
+                                            <span>7:00</span>
+                                            <span>|</span>
+                                            <span>10/10/2020</span>
+                                        </div>
+                                        <div class="product_review">
+                                            <p>Quá đẹp luôn shop ơi!!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_review_star">
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review_product_content">
+                                <div class="product_review_content" >
+                                    <div class="img">
+                                        <img src="img/nv.png" style="width: 40px;" alt="">
+                                    </div>
+                                    <div class="review_wrapper">
+                                        <div class="product_customer">
+                                            <p>Batman</p>
+                                        </div>
+                                        <div class="product_time">
+                                            <span>7:00</span>
+                                            <span>|</span>
+                                            <span>10/10/2020</span>
+                                        </div>
+                                        <div class="product_review">
+                                            <p>Quá đẹp luôn shop ơi!!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_review_star">
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end-review -->
+                    <div class="tabcontent" id="comment">
+                        <div class="comment_wrapper">
+                            <div class="name">
+                                <input type="text" name="name" placeholder="name" class="comment-name">
+                            </div>
+                            <div class="email">
+                                <input type="text" name="email" placeholder="email" class="comment-email">
+                            </div>
+                            <div class="comment_comment">
+                                <textarea name="comment" placeholder="Bình luận tại đây..." id="" class="tbcomment"></textarea>
+                            </div>
+                            <div class="comment_btn">
+                                <button>Bình luận</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end-comment -->
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- footer-->
+        <footer style="margin-top: -40px">
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="col-10">
+                        <h1>FOOTER</h1>
+                    </div>
+                    <a href="https://www.facebook.com/EdwardNewgatee/" class="col-2 fb">
+                        <img src="img/fb.png" alt=""> Mai Duy Vương
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Modal account -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myModal_btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script language="javascript">
+        var product_main_img = document.getElementById("product_main_img");
+        var small_img = document.getElementsByClassName("small_img");
+
+        small_img[0].onclick = function(){
+            product_main_img.src = small_img[0].src;
+        }
+        small_img[1].onclick = function(){
+            product_main_img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function(){
+            product_main_img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function(){
+            product_main_img.src = small_img[3].src;
+        }
+        small_img[4].onclick = function(){
+            product_main_img.src = small_img[4].src;
+        }
+        small_img[5].onclick = function(){
+            product_main_img.src = small_img[5].src;
+        }
+    </script>
+
+    <!-- tab-content -->
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+
+</body>
+</html>
